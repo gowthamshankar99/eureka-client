@@ -1,0 +1,13 @@
+server:
+  port: 9000   #Custom port
+ 
+#Registering the application instance in the Euraka server
+eureka:         
+    client:
+      service-url:
+        defaultZone: http://eureka-server.default.gowthamshankar.net/eureka/
+        
+#Current Application Name which will be registered in the euraka server
+spring:     
+  application:
+    name: login-service
